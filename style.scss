@@ -1,156 +1,259 @@
-$padding-container : 0px 160px;
-$color-white: #fff;
-@import "./base.scss";
+@import "./_variables.scss";
+@import "./_base.scss";
 
-@mixin upperCase {
-    font-size: 14px;
-    text-transform: uppercase;
-}
 
-@mixin colorVsFontWelcome {
-    font-size: 12px;
-    color: #b0b0b0;
-}
-@mixin center {
+//welcome
+.welcome {
+    height: 40px;
+    //   width: 100%;
+    display: block;
+    background-color: $color-header-bg;
+    line-height: 40px;
+    // @extend .a;
+    @include colorVsFontWelcome;
+    .welcome-container {
+      padding: 0px 15px;
+      max-width: 1200px;
+      margin: auto;
+      .welcome-left {
+        float: left;
+      }
+      .welcome-log {
+        display: flex;
+        float: right;
+        & > a {
+          margin: 0px 5px;
+          @include colorVsFontWelcome;
+          text-decoration: none;
+        }
+        a:hover {
+          cursor: pointer;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+//toolbar
+.header-container {
+  // background-color: $color-white;
+  padding: 0px 15px;
+  max-width: 1200px;
+  height: 113px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    height: 83px;
+    width: auto;
+    float: left;
+  }
+  .search {
+    position: relative;
+    float: left;
+    // padding: 15px 30px;
+    // border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid $color-primary;
+    & input {
+      position: relative;
+      z-index: 1;
+      height: 48px;
+      width: 400px;
+      padding: 0px 20px;
+      border: none;
+      outline: none;
+    }
+    .fa-search {
+      padding: 8px;
+      float: right;
+      @include center;
+      width: 52px;
+      height: 48px;
+      border: 1px solid $color-primary;
+      font-size: 18px;
+      line-height: 24px;
+      background: $color-primary;
+      color: $color-white;
+      &:hover {
+        background-color: #eb2c2c;
+        cursor: pointer;
+      }
+    }
+  }
+  .hotline {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
-html {
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Roboto', sans-serif;
-}
-
-.app-wrapper {
-    width: 1200px;
-    max-width: 1200px;
-}
-// camelCase
-// PascalCase
-// kebab-case
-.a {
-    font-size: 12px;
-    color: #b0b0b0;
-}
-//header
-#header {
-    
-    .welcome {
-        padding: $padding-container;
-        padding-right: 200px;
-        height: 40px;
-        width: 100%;
-        display: block;
-        background-color: #333;
-        line-height: 40px;
-        // @extend .a;
-        @include colorVsFontWelcome;
-        .welcome-container {
-            .welcome-left {
-                float: left;
-            }
-            .welcome-log {
-                float: right;
-                & > a {
-                    @include colorVsFontWelcome;
-                    text-decoration: none;
-                }
-            }
-        }
+    height: 100%;
+    float: left;
+    .img-hotline {
+      float: left;
     }
-    & .header-container {
-        height: 113px;
-        padding: $padding-container;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        display: block;
-        position: relative;
-        align-items: center;
+    .hotline-phoneNumber {
+      float: left;
+      padding-left: 10px;
+      // @include center;
+      // align-self: unset;
+      // flex-direction: column;
+      .hotline-text {
+        color: $color-text;
+        @include upperCase;
+      }
+      .hotline-tel {
+        color: $color-primary;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+          color: #f82727;
+        }
+      }
+    }
+  }
+  .shopping-cart {
+    position: relative;
+    margin: 21px 0px;
+    height: 40px;
+    float: left;
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    border-radius: 30px;
+    border: none;
+    // @include center;
+    .shopping-cart-container {
+      display: flex;
+      align-items: center;
+      padding: 0px 15px;
+      line-height: 40px;
+      text-decoration: none;
+      color: $color-white;
+      .fa-shopping-cart {
+        margin-right: 8px;
+      }
+    }
+    &:hover {
+      background-color: #f82727;
+    }
+    &:hover .notification {
+      display: block;
+    }
+    .notification {
+      display: none;
+      height: 82px;
+      width: 300px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      background-color: $color-white;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      .notification-message {
         display: flex;
-        justify-content: space-between;
-        & .logo {
-            height: 83px;
-            width: auto;
-            float: left;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        .red {
+
+          color: $color-primary;
         }
-        & .search {
-            position: relative;
-            float: left;
-            padding: 15px 30px;
-            & input {
-                position: relative;
-                z-index: 1;
-                border: 1px solid #ce0021;
-                height: 48px;
-                width: 400px;
-                padding: 0px 20px;
-            }
-            .fa-search {
-                float: right;
-                @include center;
-                width: 52px;
-                height: 48px;
-                border: 1px solid #ce0021;
-                font-size: 24px;
-                line-height: 24px;
-                background: #ce0021;
-                color: #ffffff;
-            }
-        }
-        & .hotline {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            float: left;
-            & .img-hotline{
-                float: left;
-            }
-            & .hotline-phoneNumber{
-                float: left;
-                padding-left: 10px;
-                // @include center;
-                // align-self: unset;
-                // flex-direction: column;
-                & .hotline-text {
-                    color: #555;
-                    @include upperCase;
-                }
-                & .hotline-tel {
-                    color: #ce0021;
-                    text-decoration: none;
-                }
-            }
-        }
-        & .shopping-cart {
-            margin: 21px 0px;
-            height: 40px;
-            float: left;
-            border: 1px solid #ce0021;
-            background-color: #ce0021;
-            border-radius: 30px;
-            // @include center;
-            & a {
-                padding: 0px 15px;
-                line-height: 40px;
-                text-decoration: none;
-                color: #ffffff;
-            }
-        }
+      }
     }
-}
-// begin nav
-#nav {
-//     height: 45px;
-//     background-color: #ce0021;
+  }
 }
 
-
-
+// navigation
+.nav-header {
+  height: 45px;
+  background-color: $color-primary;
+  .nav-container {
+    padding: 0px 15px;
+    max-width: 1200px;
+    max-height: 45px;
+    margin: auto;
+    display: flex;
+    .nav-left {
+      padding: 0px 10px;
+      background-color: #b7001d;
+      .nav-left-container {
+        .fs-16 {
+          display: flex;
+          gap: 5px;
+          height: 45px;
+          line-height: 45px;
+          color: $color-white;
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 700;
+          .icon {
+            width: 22px;
+            line-height: 45px;
+          }
+        }
+      }
+    }
+    .nav-right {
+      padding: 0px 20px;
+      .nav-right-container {
+        position: relative;
+        .nav-text {
+          display: flex;
+          gap: 5px;
+          height: 45px;
+          line-height: 45px;
+          color: $color-white;
+          font-size: 14px;
+          text-transform: uppercase;
+          .icon {
+            width: 18px;
+            line-height: 45px;
+          }
+        }
+        .sub-nav {
+          display: none;
+          position: absolute;
+          z-index: 2;
+          left: -20px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          .introduce {
+            height: 42px;
+            .introduce-item {
+              width: 100%;
+              display: inline-block;
+              // background-color: $color-white;
+              border-bottom: 1px dashed #ddd;
+              .sub-nav-content {
+                line-height: 42px;
+                color: $color-primary;
+                padding: 0px 10px;
+                text-transform: uppercase;
+                word-wrap: break-word;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 14px;
+              }
+              &:hover {
+                background-color: $color-hover-bg;
+                .sub-nav-content {
+                  color: $color-white;
+                }
+              }
+            }
+            &:last-child {
+              border-bottom: 2px solid $color-primary;
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $color-hover-bg;
+        cursor: pointer;
+      }
+      &:hover .sub-nav {
+        display: block;
+      }
+    }
+  }
+}
