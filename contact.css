@@ -262,6 +262,110 @@ li {
   display: block;
 }
 
+.main-contact {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.main-contact .contact {
+  background-color: #f5f5f5;
+  margin-top: 35px;
+  max-width: 1200px;
+}
+.main-contact .contact .contact-header {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #fff;
+  padding: 20px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #757575;
+  font-size: 18px;
+}
+.main-contact .contact .contact-body .contact-branch {
+  padding: 30px 15px 0;
+  background: #fff;
+}
+.main-contact .contact .contact-body .contact-branch p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #555555;
+}
+.main-contact .contact .contact-body .contact-map {
+  padding: 0px;
+  background: #fff;
+}
+.main-contact .contact .contact-body .contact-map .map {
+  width: 100%;
+  aspect-ratio: 821/453;
+  padding: 15px;
+}
+.main-contact .contact .contact-body .contact-comment {
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 10px 15px 50px;
+}
+.main-contact .contact .contact-body .contact-comment .comment-header {
+  padding-bottom: 20px;
+  background: #fff;
+  color: #757575;
+  font-size: 22px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-content {
+  padding: 30px 0px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #555555;
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form {
+  padding: 0px 0xp 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .comment-input {
+  height: 44px;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .comment-input:focus {
+  outline: 1px solid rgb(102, 209, 244);
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .last {
+  height: 120px;
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .last::-moz-placeholder {
+  font-family: "Amatic SC", cursive;
+  font-family: "Roboto", sans-serif;
+  top: 13px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .last::placeholder {
+  font-family: "Amatic SC", cursive;
+  font-family: "Roboto", sans-serif;
+  top: 13px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-controls .btn {
+  border: none;
+  color: #fff;
+  background-color: #f11f1f;
+  padding: 12px 32px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-controls .btn:hover {
+  cursor: pointer;
+  background-color: #ee8457;
+}
+
 .main-footer {
   background-color: #fff;
 }
@@ -403,4 +507,4 @@ li {
   margin: 7px;
   color: #fff;
   font-size: 24px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=contact.css.map */

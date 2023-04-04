@@ -217,6 +217,7 @@
           left: -20px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           .introduce {
+            // height: 47px;
             .introduce-item {
               width: 100%;
               display: inline-block;
@@ -258,8 +259,113 @@
   }
 }
 
+//contact
+.main-contact {
+  background-color: $color-bg;
+  display: flex;
+  justify-content: center;
+  .contact {
+    // display: none;
+    background-color: $color-bg;
+    margin-top: 35px;
+    max-width: 1200px;
+    .contact-header {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: $color-white;
+      padding: 20px 15px;
+      border-bottom: 1px solid #e0e0e0;
+      color: $color-header;
+      font-size: 18px;
+    }
+    .contact-body {
+      .contact-branch {
+        padding: 30px 15px 0;
+        background: $color-white;
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          color: $color-text;
+        }
+      }
+      .contact-map {
+        padding: 0px;
+        background: $color-white;
+        .map {
+          width: 100%;
+          aspect-ratio: 821/453;
+          padding: 15px;
+        }
+      }
+      .contact-comment {
+        background: $color-white;
+        margin-bottom: 30px;
+        padding: 10px 15px 50px;
+        .comment-header {
+          padding-bottom: 20px;
+          background: $color-white;
+          color: $color-header;
+          font-size: 22px;
+          border-bottom: 1px solid #e0e0e0;
+        }
+        .comment-container {
+          .comment-content {
+            padding: 30px 0px;
+            font-weight: 300;
+            font-size: 14px;
+            color: $color-text;
+          }
+          .comment-form {
+            padding: 0px 0xp 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .comment-form-container {
+              .comment-input {
+                height: 44px;
+                width: 100%;
+                padding: 8px 16px;
+                font-size: 14px;
+                line-height: 17px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                &:focus {
+                  outline: 1px solid rgb(102, 209, 244);
+                }
+              }
+              .last {
+                height: 120px;
+                &::placeholder {
+                  font-family: 'Amatic SC', cursive;
+                  font-family: 'Roboto', sans-serif;
+                  top: 13px;
+                  font-weight: 400;
+                  font-size: 14px;
+                }
+              }
+            }
 
-
+            .comment-form-controls {
+              .btn {
+                border: none;
+                color: $color-white;
+                background-color: #f11f1f;
+                padding: 12px 32px;
+                font-size: 16px;
+                border-radius: 5px;
+                margin-top: 10px;
+                &:hover {
+                  cursor: pointer;
+                  background-color: #ee8457;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 // footer
 .main-footer {
