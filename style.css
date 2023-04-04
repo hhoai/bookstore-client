@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  font-family: "Amatic SC", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+.app-wrapper {
+  width: 1200px;
+  max-width: 1200px;
+}
+
+.a {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+
+#header .welcome {
+  padding: 0px 160px;
+  padding-right: 200px;
+  height: 40px;
+  width: 100%;
+  display: block;
+  background-color: #333;
+  line-height: 40px;
+  font-size: 12px;
+  color: #b0b0b0;
+}
+#header .welcome .welcome-container .welcome-left {
+  float: left;
+}
+#header .welcome .welcome-container .welcome-log {
+  float: right;
+}
+#header .welcome .welcome-container .welcome-log > a {
+  font-size: 12px;
+  color: #b0b0b0;
+  text-decoration: none;
+}
+#header .header-container {
+  height: 113px;
+  padding: 0px 160px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#header .header-container .logo {
+  height: 83px;
+  width: auto;
+  float: left;
+}
+#header .header-container .search {
+  position: relative;
+  float: left;
+  padding: 15px 30px;
+}
+#header .header-container .search input {
+  position: relative;
+  z-index: 1;
+  border: 1px solid #ce0021;
+  height: 48px;
+  width: 400px;
+  padding: 0px 20px;
+}
+#header .header-container .search .fa-search {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 48px;
+  border: 1px solid #ce0021;
+  font-size: 24px;
+  line-height: 24px;
+  background: #ce0021;
+  color: #ffffff;
+}
+#header .header-container .hotline {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  float: left;
+}
+#header .header-container .hotline .img-hotline {
+  float: left;
+}
+#header .header-container .hotline .hotline-phoneNumber {
+  float: left;
+  padding-left: 10px;
+}
+#header .header-container .hotline .hotline-phoneNumber .hotline-text {
+  color: #555;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#header .header-container .hotline .hotline-phoneNumber .hotline-tel {
+  color: #ce0021;
+  text-decoration: none;
+}
+#header .header-container .shopping-cart {
+  margin: 21px 0px;
+  height: 40px;
+  float: left;
+  border: 1px solid #ce0021;
+  background-color: #ce0021;
+  border-radius: 30px;
+}
+#header .header-container .shopping-cart a {
+  padding: 0px 15px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

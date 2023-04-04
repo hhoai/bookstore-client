@@ -1,0 +1,156 @@
+$padding-container : 0px 160px;
+$color-white: #fff;
+@import "./base.scss";
+
+@mixin upperCase {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@mixin colorVsFontWelcome {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-wrapper {
+    width: 1200px;
+    max-width: 1200px;
+}
+// camelCase
+// PascalCase
+// kebab-case
+.a {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+//header
+#header {
+    
+    .welcome {
+        padding: $padding-container;
+        padding-right: 200px;
+        height: 40px;
+        width: 100%;
+        display: block;
+        background-color: #333;
+        line-height: 40px;
+        // @extend .a;
+        @include colorVsFontWelcome;
+        .welcome-container {
+            .welcome-left {
+                float: left;
+            }
+            .welcome-log {
+                float: right;
+                & > a {
+                    @include colorVsFontWelcome;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    & .header-container {
+        height: 113px;
+        padding: $padding-container;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: block;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        & .logo {
+            height: 83px;
+            width: auto;
+            float: left;
+        }
+        & .search {
+            position: relative;
+            float: left;
+            padding: 15px 30px;
+            & input {
+                position: relative;
+                z-index: 1;
+                border: 1px solid #ce0021;
+                height: 48px;
+                width: 400px;
+                padding: 0px 20px;
+            }
+            .fa-search {
+                float: right;
+                @include center;
+                width: 52px;
+                height: 48px;
+                border: 1px solid #ce0021;
+                font-size: 24px;
+                line-height: 24px;
+                background: #ce0021;
+                color: #ffffff;
+            }
+        }
+        & .hotline {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            float: left;
+            & .img-hotline{
+                float: left;
+            }
+            & .hotline-phoneNumber{
+                float: left;
+                padding-left: 10px;
+                // @include center;
+                // align-self: unset;
+                // flex-direction: column;
+                & .hotline-text {
+                    color: #555;
+                    @include upperCase;
+                }
+                & .hotline-tel {
+                    color: #ce0021;
+                    text-decoration: none;
+                }
+            }
+        }
+        & .shopping-cart {
+            margin: 21px 0px;
+            height: 40px;
+            float: left;
+            border: 1px solid #ce0021;
+            background-color: #ce0021;
+            border-radius: 30px;
+            // @include center;
+            & a {
+                padding: 0px 15px;
+                line-height: 40px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+}
+// begin nav
+#nav {
+//     height: 45px;
+//     background-color: #ce0021;
+}
+
+
+
