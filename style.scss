@@ -1,5 +1,5 @@
-@import "./_variables.scss";
-@import "./_base.scss";
+@import "./scss/variables";
+@import "./scss/base";
 
 //welcome
 .welcome {
@@ -188,7 +188,6 @@
           .icon {
             width: 22px;
             line-height: 45px;
-
           }
         }
       }
@@ -258,8 +257,124 @@
   }
 }
 
-
-
+//home page
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .slider {
+    // background-color: $color-white;
+    max-width: 1200px;
+    .slider-container {
+      display: flex;
+      .menu {
+        position: relative;
+        left: 175px;
+        top: 2px;
+        width: 20%;
+        .menu-a {
+          width: 242px;
+          box-shadow: rgba(72, 72, 80, 0.2) 0px 7px 7px 0px;
+          .menu-container {
+            .menu-content {
+              display: flex;
+              justify-content: space-between;
+              border-bottom: 1px dashed #ddd;
+              padding: 0px 15px;
+              .menu-items {
+                color: $color-primary;
+                // background-color: $color-red;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 42px;
+                width: 100%;
+                &:hover {
+                  color: $color-white !important;
+                }
+              }
+              .icon-right {
+                color: $color-primary;
+                // float: right;
+                line-height: 42px;
+                padding: 0px 5px;
+              }
+            }
+            &:last-child {
+              border-bottom: 3px solid $color-primary;
+            }
+            &:hover {
+              background-color: $color-hover-bg;
+              color: $color-white !important;
+            }
+            // sub menu
+            &:hover .sub-menu {
+              display: block;
+            }
+            .sub-menu {
+              background-image: url("./img/icon-collection-bg-1.png");
+              display: none;
+              box-shadow: rgba(72, 72, 80, 0.2) 0px 2px 7px 0px;
+              width: 300px;
+              height: 260px;
+              position: absolute;
+              left: 240px;
+              top: 0px;
+              z-index: 2;
+              background-color: $color-white;
+              .sub-menu-h {
+                padding: 10px 15px;
+                color: $color-header-bg;
+                display: flex;
+                .icon-bar {
+                  padding-right: 10px;
+                }
+              }
+              .sub-menu-container {
+                padding: 0px 15px;
+                .sub-menu-items {
+                  font-size: 12px;
+                  color: #424242;
+                  &:hover {
+                    color: $color-hover-bg;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .slidershow {
+        padding-right: 15px;
+        .img-slideshow {
+          position: relative;
+          left: 180px;
+          top: 2px;
+          max-width: 940px;
+        }
+      }
+    }
+    .banner {
+      width: fit-content;
+      padding-top: 10px;
+      display: flex;
+      gap: 10px;
+      position: relative;
+      left: 420px;
+      .banner-items {
+        .banner-img {
+          width: 305px;
+        }
+      }
+    }
+  }
+  .new-book {
+    .new-book-header {
+    }
+    .new-book-container {
+    }
+  }
+}
 
 // footer
 .main-footer {
@@ -292,7 +407,7 @@
             .icon {
               top: 0;
               left: 0;
-              transition: all .4s ease-out;
+              transition: all 0.4s ease-out;
               font-size: 20px;
               position: absolute;
             }
@@ -409,4 +524,3 @@
     }
   }
 }
-
