@@ -265,6 +265,7 @@
   .slider {
     // background-color: $color-white;
     max-width: 1200px;
+    padding-bottom: 30px;
     .slider-container {
       display: flex;
       .menu {
@@ -289,9 +290,6 @@
                 font-weight: 400;
                 line-height: 42px;
                 width: 100%;
-                &:hover {
-                  color: $color-white !important;
-                }
               }
               .icon-right {
                 color: $color-primary;
@@ -305,6 +303,9 @@
             }
             &:hover {
               background-color: $color-hover-bg;
+            }
+            &:hover .menu-items,
+            &:hover .icon-right {
               color: $color-white !important;
             }
             // sub menu
@@ -326,6 +327,8 @@
                 padding: 10px 15px;
                 color: $color-header-bg;
                 display: flex;
+                font-size: 15px;
+                font-weight: 500;
                 .icon-bar {
                   padding-right: 10px;
                 }
@@ -333,7 +336,7 @@
               .sub-menu-container {
                 padding: 0px 15px;
                 .sub-menu-items {
-                  font-size: 12px;
+                  font-size: 14px;
                   color: #424242;
                   &:hover {
                     color: $color-hover-bg;
@@ -369,9 +372,83 @@
     }
   }
   .new-book {
-    .new-book-header {
-    }
-    .new-book-container {
+    background-color: $color-bg;
+    display: flex;
+    justify-content: center;
+    .new-book-a {
+      margin: 35px 0px;
+      max-width: 1200px;
+      .new-book-header {
+        background-color: $color-white;
+        .new-book-heading {
+          width: fit-content;
+          background-color: $color-primary;
+          text-transform: uppercase;
+          color: $color-white;
+          padding: 15px;
+          font-weight: 300;
+          font-size: 20px;
+          border-top-right-radius: 6px;
+          border-top-left-radius: 6px;
+        }
+      }
+      .new-book-container {
+        display: flex;
+        gap: 10px;
+        .new-book-link {
+          margin: 15px 0px;
+          background-color: #fafafa;
+          .new-book-items {
+            max-width: 230px;
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            .new-book-sale {
+              width: fit-content;
+              color: $color-white;
+              background-color: $color-red;
+              padding: 3px 5px;
+              margin-bottom: 5px;
+            }
+            .new-book-img {
+              display: flex;
+              justify-content: center;
+              & > img {
+                height: 180px;
+              }
+            }
+            .new-book-name {
+              color: #212121;
+              font-size: 16px;
+              white-space: pre;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 100%;
+              float: left;
+              text-align: center;
+              font-weight: 300;
+            }
+            .new-book-price {
+              display: flex;
+              justify-content: center;
+              .current-price {
+                color: $color-red;
+                padding: 0px 5px 15px;
+              }
+              .cost {
+                font-weight: 300;
+                color: #cccaca;
+                text-decoration: line-through;
+              }
+            }
+            &:hover {
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+          }
+        }
+      }
     }
   }
 }

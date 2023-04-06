@@ -269,6 +269,7 @@ li {
 }
 .home-page .slider {
   max-width: 1200px;
+  padding-bottom: 30px;
 }
 .home-page .slider .slider-container {
   display: flex;
@@ -297,9 +298,6 @@ li {
   line-height: 42px;
   width: 100%;
 }
-.home-page .slider .slider-container .menu .menu-a .menu-container .menu-content .menu-items:hover {
-  color: #fff !important;
-}
 .home-page .slider .slider-container .menu .menu-a .menu-container .menu-content .icon-right {
   color: #ce0021;
   line-height: 42px;
@@ -310,6 +308,8 @@ li {
 }
 .home-page .slider .slider-container .menu .menu-a .menu-container:hover {
   background-color: #b7001d;
+}
+.home-page .slider .slider-container .menu .menu-a .menu-container:hover .menu-items, .home-page .slider .slider-container .menu .menu-a .menu-container:hover .icon-right {
   color: #fff !important;
 }
 .home-page .slider .slider-container .menu .menu-a .menu-container:hover .sub-menu {
@@ -331,6 +331,8 @@ li {
   padding: 10px 15px;
   color: #333;
   display: flex;
+  font-size: 15px;
+  font-weight: 500;
 }
 .home-page .slider .slider-container .menu .menu-a .menu-container .sub-menu .sub-menu-h .icon-bar {
   padding-right: 10px;
@@ -339,7 +341,7 @@ li {
   padding: 0px 15px;
 }
 .home-page .slider .slider-container .menu .menu-a .menu-container .sub-menu .sub-menu-container .sub-menu-items {
-  font-size: 12px;
+  font-size: 14px;
   color: #424242;
 }
 .home-page .slider .slider-container .menu .menu-a .menu-container .sub-menu .sub-menu-container .sub-menu-items:hover {
@@ -366,6 +368,89 @@ li {
 .home-page .slider .banner .banner-items .banner-img {
   width: 305px;
 }
+.home-page .new-book {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.home-page .new-book .new-book-a {
+  margin: 35px 0px;
+  max-width: 1200px;
+}
+.home-page .new-book .new-book-a .new-book-header {
+  background-color: #fff;
+}
+.home-page .new-book .new-book-a .new-book-header .new-book-heading {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ce0021;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 20px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.home-page .new-book .new-book-a .new-book-container {
+  display: flex;
+  gap: 10px;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link {
+  margin: 15px 0px;
+  background-color: #fafafa;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items {
+  max-width: 230px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-sale {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-img {
+  display: flex;
+  justify-content: center;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-img > img {
+  height: 180px;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-name {
+  color: #212121;
+  font-size: 16px;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-weight: 300;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-price {
+  display: flex;
+  justify-content: center;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-price .current-price {
+  color: #ff0000;
+  padding: 0px 5px 15px;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-price .cost {
+  font-weight: 300;
+  color: #cccaca;
+  text-decoration: line-through;
+}
+.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .main-footer {
   background-color: #fff;
 }
