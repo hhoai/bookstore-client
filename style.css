@@ -368,19 +368,22 @@ li {
 .home-page .slider .banner .banner-items .banner-img {
   width: 305px;
 }
+.home-page .slider .banner .banner-items .banner-img:hover {
+  box-shadow: rgba(72, 72, 80, 0.2) 0px 7px 7px 0px;
+}
 .home-page .new-book {
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
 }
-.home-page .new-book .new-book-a {
+.home-page .new-book .book-a {
   margin: 35px 0px;
   max-width: 1200px;
 }
-.home-page .new-book .new-book-a .new-book-header {
+.home-page .new-book .book-a .book-header {
   background-color: #fff;
 }
-.home-page .new-book .new-book-a .new-book-header .new-book-heading {
+.home-page .new-book .book-a .book-header .book-heading {
   width: -moz-fit-content;
   width: fit-content;
   background-color: #ce0021;
@@ -392,15 +395,15 @@ li {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
 }
-.home-page .new-book .new-book-a .new-book-container {
+.home-page .new-book .book-a .book-container {
   display: flex;
   gap: 10px;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link {
+.home-page .new-book .book-a .book-container .book-link {
   margin: 15px 0px;
   background-color: #fafafa;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items {
+.home-page .new-book .book-a .book-container .book-link .book-items {
   max-width: 230px;
   padding: 0px 20px;
   display: flex;
@@ -408,7 +411,12 @@ li {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-sale {
+.home-page .new-book .book-a .book-container .book-link .book-items .book-sale-a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+.home-page .new-book .book-a .book-container .book-link .book-items .book-sale-a .book-sale {
   width: -moz-fit-content;
   width: fit-content;
   color: #fff;
@@ -416,38 +424,348 @@ li {
   padding: 3px 5px;
   margin-bottom: 5px;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-img {
+.home-page .new-book .book-a .book-container .book-link .book-items .book-img {
   display: flex;
   justify-content: center;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-img > img {
+.home-page .new-book .book-a .book-container .book-link .book-items .book-img > img {
   height: 180px;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-name {
+.home-page .new-book .book-a .book-container .book-link .book-items .book-name-a {
+  padding: 7px 0px 5px;
+}
+.home-page .new-book .book-a .book-container .book-link .book-items .book-name-a .book-name {
   color: #212121;
   font-size: 16px;
-  white-space: pre;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
-  float: left;
-  text-align: center;
   font-weight: 300;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-price {
+.home-page .new-book .book-a .book-container .book-link .book-items .book-name-a:hover .book-name {
+  color: #ce0021;
+}
+.home-page .new-book .book-a .book-container .book-link .book-items .book-price {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-price .current-price {
+.home-page .new-book .book-a .book-container .book-link .book-items .book-price .current-price {
   color: #ff0000;
   padding: 0px 5px 15px;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items .new-book-price .cost {
+.home-page .new-book .book-a .book-container .book-link .book-items .book-price .cost {
   font-weight: 300;
   color: #cccaca;
   text-decoration: line-through;
 }
-.home-page .new-book .new-book-a .new-book-container .new-book-link .new-book-items:hover {
+.home-page .new-book .book-a .book-container .book-link .book-items:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.home-page .bestseller-book {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.home-page .bestseller-book .book-a {
+  margin: 35px 0px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-page .bestseller-book .book-a .book-header {
+  background-color: #fff;
+}
+.home-page .bestseller-book .book-a .book-header .book-heading {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ce0021;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 20px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.home-page .bestseller-book .book-a .book-container {
+  display: flex;
+}
+.home-page .bestseller-book .book-a .book-container .banner {
+  padding: 15px 13px 0px 0px;
+}
+.home-page .bestseller-book .book-a .book-container .book-book {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items {
+  max-width: 230px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-sale-a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-sale-a .book-sale {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-img {
+  display: flex;
+  justify-content: center;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-img > img {
+  height: 180px;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-name-a {
+  padding: 7px 0px 5px;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-name-a .book-name {
+  color: #212121;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-name-a:hover .book-name {
+  color: #ce0021;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-price {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-price .current-price {
+  color: #ff0000;
+  padding: 0px 5px 15px;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items .book-price .cost {
+  font-weight: 300;
+  color: #cccaca;
+  text-decoration: line-through;
+}
+.home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.home-page .kid-book {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.home-page .kid-book .book-a {
+  margin: 35px 0px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-page .kid-book .book-a .book-header {
+  background-color: #fff;
+}
+.home-page .kid-book .book-a .book-header .book-heading {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ce0021;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 20px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.home-page .kid-book .book-a .book-container {
+  display: flex;
+}
+.home-page .kid-book .book-a .book-container .banner {
+  padding: 15px 13px 0px 0px;
+}
+.home-page .kid-book .book-a .book-container .book-book {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items {
+  max-width: 230px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-sale-a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-sale-a .book-sale {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-img {
+  display: flex;
+  justify-content: center;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-img > img {
+  height: 180px;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-name-a {
+  padding: 7px 0px 5px;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-name-a .book-name {
+  color: #212121;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-name-a:hover .book-name {
+  color: #ce0021;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-price {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-price .current-price {
+  color: #ff0000;
+  padding: 0px 5px 15px;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items .book-price .cost {
+  font-weight: 300;
+  color: #cccaca;
+  text-decoration: line-through;
+}
+.home-page .kid-book .book-a .book-container .book-book .book-link .book-items:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.home-page .raise-children-book {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.home-page .raise-children-book .book-a {
+  margin: 35px 0px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-page .raise-children-book .book-a .book-header {
+  background-color: #fff;
+}
+.home-page .raise-children-book .book-a .book-header .book-heading {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ce0021;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 20px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.home-page .raise-children-book .book-a .book-container {
+  display: flex;
+}
+.home-page .raise-children-book .book-a .book-container .banner {
+  padding: 15px 13px 0px 0px;
+}
+.home-page .raise-children-book .book-a .book-container .book-book {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items {
+  max-width: 230px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-sale-a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-sale-a .book-sale {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-img {
+  display: flex;
+  justify-content: center;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-img > img {
+  height: 180px;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-name-a {
+  padding: 7px 0px 5px;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-name-a .book-name {
+  color: #212121;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-name-a:hover .book-name {
+  color: #ce0021;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-price {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-price .current-price {
+  color: #ff0000;
+  padding: 0px 5px 15px;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items .book-price .cost {
+  font-weight: 300;
+  color: #cccaca;
+  text-decoration: line-through;
+}
+.home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
