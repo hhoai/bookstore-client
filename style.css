@@ -910,4 +910,287 @@ li {
   margin: 7px;
   color: #fff;
   font-size: 24px;
+}
+
+.sign-in-wrapper .modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+}
+.sign-in-wrapper .modal .modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sign-in-wrapper .modal .modal-body {
+  width: 650px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  background-color: #b67a7a;
+  position: relative;
+  z-index: 10;
+  border-radius: 15px;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .out {
+  float: right;
+  color: #f3dddd;
+  margin: 15px 20px;
+  font-size: 28px;
+  font-style: bold;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .out:hover {
+  cursor: pointer;
+  color: #b7001d;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container {
+  padding: 40px 45px 0px;
+  margin: auto;
+  height: 400px;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__header .auth-form__heading {
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__header .auth-form__switch-btn {
+  color: #fff;
+  font-size: 24px;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__header .auth-form__switch-btn:hover {
+  cursor: pointer;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content {
+  padding: 30px 35px;
+  margin: auto;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__form .auth-form__group .auth-form__input {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #949598;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__form .auth-form__group .auth-form__input:focus {
+  outline: 2px solid rgb(241, 2, 2);
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__form .auth-form__miss .auth-form__miss-t {
+  float: right;
+  color: #b7001d;
+  font-size: 14px;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__form .auth-form__miss .auth-form__miss-t:hover {
+  cursor: pointer;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 0px;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__controls .btn {
+  width: 50%;
+  height: 50px;
+  background-color: #b7001d;
+  float: right;
+  border-radius: 10px;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__controls .btn:hover {
+  cursor: pointer;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials {
+  height: 100px;
+  background-color: #e2d7d7;
+  display: flex;
+  padding: 0 45px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  gap: 30px;
+  position: relative;
+  top: -20px;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials .btn--with-icon {
+  height: 50px;
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border: #fff;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #ce0021;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials .btn--with-icon:hover {
+  background-color: #ebc4c4;
+}
+.sign-in-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials .btn--with-icon .social-icon {
+  font-size: 24px;
+}
+
+.sign-up-wrapper .modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+}
+.sign-up-wrapper .modal .modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sign-up-wrapper .modal .modal-body {
+  width: 650px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b67a7a;
+  position: relative;
+  z-index: 10;
+  border-radius: 15px;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .out {
+  float: right;
+  color: #f3dddd;
+  margin: 15px 20px;
+  font-size: 28px;
+  font-style: bold;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .out:hover {
+  cursor: pointer;
+  color: #b7001d;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container {
+  padding: 40px 45px 0px;
+  margin: auto;
+  height: 400px;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__header .auth-form__heading {
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__header .auth-form__switch-btn {
+  color: #fff;
+  font-size: 24px;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__header .auth-form__switch-btn:hover {
+  cursor: pointer;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content {
+  padding: 15px 35px;
+  margin: auto;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__form .auth-form__group .auth-form__input {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #949598;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__form .auth-form__group .auth-form__input:focus {
+  outline: 2px solid rgb(241, 2, 2);
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__aside {
+  margin: 15px 0px;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__aside .auth-form__policy-text {
+  font-size: 16px;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__aside .auth-form__policy-text .auth-form__policy-link {
+  color: #fff;
+  text-decoration: none;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__aside .auth-form__policy-text .auth-form__policy-link:hover {
+  color: #3700ff;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 13px 0px;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__controls .btn {
+  width: 50%;
+  height: 50px;
+  background-color: #b7001d;
+  float: right;
+  border-radius: 10px;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .auth-form__content .auth-form__controls .btn:hover {
+  cursor: pointer;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials {
+  height: 100px;
+  background-color: #e2d7d7;
+  display: flex;
+  padding: 0 45px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  gap: 30px;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials .btn--with-icon {
+  height: 50px;
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border: #fff;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #ce0021;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials .btn--with-icon:hover {
+  background-color: #ebc4c4;
+}
+.sign-up-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials .btn--with-icon .social-icon {
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */
