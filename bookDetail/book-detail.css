@@ -483,21 +483,221 @@ li {
   color: #3700ff;
 }
 
-.detail {
-  padding: 20px 15px;
-  max-width: 1200px;
+.product-al {
+  background-color: #f5f5f5;
+}
+.product-al .detail {
+  padding: 10px;
+  max-width: 1250px;
   margin: auto;
   display: flex;
 }
-.detail .left .new-books {
-  width: 300px;
+.product-al .detail .left .new-books {
+  width: 280px;
   background-color: #fff;
 }
-.detail .left .new-books .header {
+.product-al .detail .left .new-books .header {
   text-transform: uppercase;
   font-size: 20px;
-  color: #555555;
+  color: #777778;
+  margin: 0px 15px;
+  padding: 20px 0px 15px;
+  border-bottom: 1px solid #d1d1d1;
 }
+.product-al .detail .left .new-books .container .items {
+  margin: 15px 15px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px dashed #d1d1d1;
+}
+.product-al .detail .left .new-books .container .items .book-img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+.product-al .detail .left .new-books .container .items .text {
+  font-size: 14px;
+}
+.product-al .detail .left .new-books .container .items .text .book-name-a .book-name {
+  color: #373737;
+}
+.product-al .detail .left .new-books .container .items .text .book-price {
+  padding: 10px 0px;
+  display: flex;
+  gap: 5px;
+}
+.product-al .detail .left .new-books .container .items .text .book-price .current-price {
+  color: #ff0000;
+}
+.product-al .detail .left .new-books .container .items .text .book-price .cost {
+  text-decoration: line-through;
+  color: #8b8b8b;
+  font-size: 13px;
+  font-weight: 300;
+}
+.product-al .detail .left .new-books .container .items:last-child {
+  border-bottom: none;
+}
+.product-al .detail .left .banner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.product-al .detail .left .banner .banner-ad {
+  width: 280px;
+}
+.product-al .detail .left .banner .banner-ad:hover {
+  position: relative;
+  top: -3px;
+  box-shadow: rgba(34, 34, 35, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.product-al .detail .right .describe-book {
+  margin: 0px 20px;
+  background-color: #fff;
+  padding: 15px;
+}
+.product-al .detail .right .describe-book .describe-header {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  color: #f23434;
+  border: 3px solid #f23434;
+}
+.product-al .detail .right .describe-book .line {
+  position: relative;
+  top: -18px;
+  padding-left: 175px;
+}
+.product-al .detail .right .describe-book .line hr {
+  height: 0.5px;
+  color: #b7b8b9;
+  background-color: #b7b8b9;
+  border: none;
+}
+.product-al .detail .right .describe-book .describe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #555555;
+  font-weight: 300;
+  margin: 20px 30px;
+  font-size: 17px;
+  text-align: justify;
+}
+.product-al .detail .right .describe-book .describe-content .bold {
+  font-weight: 700;
+}
+.product-al .detail .right .describe-book .describe-content .italic {
+  font-style: italic;
+}
+.product-al .detail .right .describe-book .describe-content .cl-b {
+  color: #000;
+}
+.product-al .detail .right .other-books .other-book-header {
+  margin: auto;
+  padding: 30px 20px 5px;
+  color: #6b6a6a;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #f5f5f5;
+  position: relative;
+  z-index: 2;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.product-al .detail .right .other-books .line {
+  margin: 0px 20px;
+  position: relative;
+  top: -20px;
+}
+.product-al .detail .right .other-books .line hr {
+  height: 0.5px;
+  color: #d9dada;
+  background-color: #d9dada;
+  border: none;
+}
+.product-al .detail .right .other-books .book-container {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.product-al .detail .right .other-books .book-container .book-book {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items {
+  max-width: 220px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-sale-a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-sale-a .book-sale {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-img {
+  display: flex;
+  justify-content: center;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-img > img {
+  height: 180px;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-name-a {
+  padding: 7px 0px 5px;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-name-a .book-name {
+  color: #212121;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-name-a:hover .book-name {
+  color: #ce0021;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-price {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-price .current-price {
+  color: #ff0000;
+  padding: 0px 5px 15px;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items .book-price .cost {
+  font-weight: 300;
+  color: #cccaca;
+  text-decoration: line-through;
+}
+.product-al .detail .right .other-books .book-container .book-book .book-link .book-items:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .main-footer {
   background-color: #fff;
 }
