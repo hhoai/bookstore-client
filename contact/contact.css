@@ -339,16 +339,12 @@ li {
   height: 120px;
 }
 .main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .last::-moz-placeholder {
-  font-family: "Amatic SC", cursive;
   font-family: "Roboto", sans-serif;
-  top: 13px;
   font-weight: 400;
   font-size: 14px;
 }
 .main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .last::placeholder {
-  font-family: "Amatic SC", cursive;
   font-family: "Roboto", sans-serif;
-  top: 13px;
   font-weight: 400;
   font-size: 14px;
 }

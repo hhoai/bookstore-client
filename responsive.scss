@@ -1,0 +1,62 @@
+/* mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  * {
+    display: none;
+  }
+}
+
+/* tablet: width >= 740px && < 1024px */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+  .header-container {
+    .logo {
+    }
+    .search {
+      input {
+        width: 250px;
+      }
+    }
+    .hotline,
+    .shopping-cart {
+      display: none;
+    }
+  }
+  .home-page {
+    .slider {
+      .slider-container {
+        .menu {
+          display: none;
+        }
+        .slidershow {
+          padding: 0px 15px;
+          .img-slideshow {
+            position: relative;
+            left: 0px;
+            top: 2px;
+            max-width: 100%;
+          }
+        }
+      }
+      .banner {
+        padding: 0px 15px;
+        position: relative;
+        left: 0px;
+        .banner-items {
+          .banner-img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .new-book {
+      
+    }
+  }
+}
+
+/* pc: width > 1024px*/
+@media only screen and (min-width: 1024px) {
+  * {
+    display: none;
+  }
+}

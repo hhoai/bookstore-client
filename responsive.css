@@ -1,0 +1,42 @@
+/* mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  * {
+    display: none;
+  }
+}
+/* tablet: width >= 740px && < 1024px */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+  .header-container .search input {
+    width: 250px;
+  }
+  .header-container .hotline,
+  .header-container .shopping-cart {
+    display: none;
+  }
+  .home-page .slider .slider-container .menu {
+    display: none;
+  }
+  .home-page .slider .slider-container .slidershow {
+    padding: 0px 15px;
+  }
+  .home-page .slider .slider-container .slidershow .img-slideshow {
+    position: relative;
+    left: 0px;
+    top: 2px;
+    max-width: 100%;
+  }
+  .home-page .slider .banner {
+    padding: 0px 15px;
+    position: relative;
+    left: 0px;
+  }
+  .home-page .slider .banner .banner-items .banner-img {
+    width: 100%;
+  }
+}
+/* pc: width > 1024px*/
+@media only screen and (min-width: 1024px) {
+  * {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */
