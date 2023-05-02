@@ -34,10 +34,15 @@ minusButton = document.querySelector(".qtyminus");
 plusButton = document.querySelector(".qtyplus");
 output = document.querySelector(".selector");
 
-if (output.value > 0) {
-  minusButton.addEventListener("click", () => output.value--);
-  plusButton.addEventListener("click", () => output.value++);
-}
+
+  minusButton.addEventListener("click", () => {
+    if (output.value < 1) {
+      return 0;
+    }
+    output.value--;
+  });
+  
+plusButton.addEventListener("click", () => output.value++);
 
 
 // add to cart
