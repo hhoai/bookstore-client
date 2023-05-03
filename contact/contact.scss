@@ -188,7 +188,6 @@
           .icon {
             width: 22px;
             line-height: 45px;
-
           }
         }
       }
@@ -333,29 +332,36 @@
                   outline: 1px solid rgb(102, 209, 244);
                 }
               }
+              .error-text {
+                color: $color-red;
+                margin: 10px 10px;
+                font-size: 14px;
+                position: relative;
+                top: 5px;
+              }
               .last {
                 height: 120px;
                 &::placeholder {
-                  font-family: 'Roboto', sans-serif;
+                  font-family: "Roboto", sans-serif;
                   font-weight: 400;
                   font-size: 14px;
                 }
               }
             }
+          }
 
-            .comment-form-controls {
-              .btn {
-                border: none;
-                color: $color-white;
-                background-color: #f11f1f;
-                padding: 12px 32px;
-                font-size: 16px;
-                border-radius: 5px;
-                margin-top: 10px;
-                &:hover {
-                  cursor: pointer;
-                  background-color: #ee8457;
-                }
+          .comment-form-controls {
+            .btn {
+              border: none;
+              color: $color-white;
+              background-color: #f11f1f;
+              padding: 12px 32px;
+              font-size: 16px;
+              border-radius: 5px;
+              margin-top: 10px;
+              &:hover {
+                cursor: pointer;
+                background-color: #ee8457;
               }
             }
           }
@@ -396,7 +402,7 @@
             .icon {
               top: 0;
               left: 0;
-              transition: all .4s ease-out;
+              transition: all 0.4s ease-out;
               font-size: 20px;
               position: absolute;
             }
@@ -551,7 +557,6 @@
             &:hover {
               cursor: pointer;
               color: #b7001d;
-
             }
           }
           .auth-form__container {
@@ -701,7 +706,6 @@
             &:hover {
               cursor: pointer;
               color: #b7001d;
-
             }
           }
           .auth-form__container {

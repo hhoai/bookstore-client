@@ -335,6 +335,13 @@ li {
 .main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .comment-input:focus {
   outline: 1px solid rgb(102, 209, 244);
 }
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .error-text {
+  color: #ff0000;
+  margin: 10px 10px;
+  font-size: 14px;
+  position: relative;
+  top: 5px;
+}
 .main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-container .last {
   height: 120px;
 }
@@ -348,7 +355,7 @@ li {
   font-weight: 400;
   font-size: 14px;
 }
-.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-controls .btn {
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form-controls .btn {
   border: none;
   color: #fff;
   background-color: #f11f1f;
@@ -357,7 +364,7 @@ li {
   border-radius: 5px;
   margin-top: 10px;
 }
-.main-contact .contact .contact-body .contact-comment .comment-container .comment-form .comment-form-controls .btn:hover {
+.main-contact .contact .contact-body .contact-comment .comment-container .comment-form-controls .btn:hover {
   cursor: pointer;
   background-color: #ee8457;
 }

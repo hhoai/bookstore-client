@@ -172,28 +172,38 @@
                 Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và
                 chúng tôi sẽ liên lạc lại với bạn sớm nhất có thể.
               </div>
-              <div class="comment-form">
-                <div class="comment-form-container">
+              <div class="comment-form" id="comment-form">
+                <div class="comment-form-container" >
                   <input
                     type="text"
                     class="comment-input"
                     placeholder="Tên của bạn"
+                    name="name"
+                    id="name"
                   />
+                  <span class="error-text" id="name-error"></span>
                 </div>
                 <div class="comment-form-container">
                   <input
                     type="text"
                     class="comment-input"
                     placeholder="Email của bạn"
+                    name="email"
+                    id="email"
                   />
+                  <span class="error-text" id="email-error"></span>
                 </div>
                 <div class="comment-form-container">
                   <textarea
+                    required
                     rows="6"
                     class="comment-input last"
                     placeholder="Viết bình luận"
+                    id="comment"
+                    name="comment"
                   >
                   </textarea>
+                  <span class="error-text" id="comment-error"></span>
                 </div>
                 <div class="comment-form-controls">
                   <button class="btn">Gửi liên hệ</button>
@@ -305,7 +315,7 @@
                         <input
                           type="text"
                           class="auth-form__input"
-                          placeholder="Email"
+                          placeholder="Tên đăng nhập"
                         />
                       </div>
                       <div class="auth-form__group">
@@ -367,7 +377,7 @@
                         <input
                           type="text"
                           class="auth-form__input"
-                          placeholder="Email"
+                          placeholder="Tên đăng nhập"
                         />
                       </div>
                       <div class="auth-form__group">

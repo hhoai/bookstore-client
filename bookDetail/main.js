@@ -1,6 +1,6 @@
 //sign up 
 var signupButton = document.querySelector(".signup");
-var signupForm = document.querySelector(".signup-form");
+var signupForm = document.querySelector(".sign-up-wrapper .modal");
 var loginButton = document.querySelector(".login");
 var loginForm = document.querySelector(".sign-in-wrapper .modal");
 var outButton = document.querySelectorAll(".out");

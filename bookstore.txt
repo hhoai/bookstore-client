@@ -49,3 +49,7 @@ BOOKSTORE
 *giỏ hàng
 
 *thanh toán
+
+function: login, signup
+					contact
+					
