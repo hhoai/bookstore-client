@@ -949,9 +949,12 @@
             margin: 15px 20px;
             font-size: 28px;
             font-style: bold;
+            padding: 0px 6px;
             &:hover {
               cursor: pointer;
-              color: #b7001d;
+              color: #000;
+              background: #966464;
+              border-radius: 50%;
             }
           }
           .auth-form__container {
@@ -971,9 +974,11 @@
                 .auth-form__switch-btn {
                   color: $color-white;
                   font-size: 24px;
+                  padding: 7px 10px;
                 }
                 .auth-form__switch-btn:hover {
                   cursor: pointer;
+                  color: #4d0808;
                 }
               }
               .auth-form__content {
@@ -1005,6 +1010,7 @@
                       font-size: 14px;
                       &:hover {
                         cursor: pointer;
+                        text-decoration: underline
                       }
                     }
                   }
@@ -1026,6 +1032,7 @@
                   }
                   .btn:hover {
                     cursor: pointer;
+                    opacity: 0.8;
                   }
                 }
               }
@@ -1050,6 +1057,7 @@
                 }
                 .auth-form__switch-btn:hover {
                   cursor: pointer;
+                  color: #4d0808;
                 }
               }
               .auth-form__content {
@@ -1103,6 +1111,7 @@
                   }
                   .btn:hover {
                     cursor: pointer;
+                    opacity: 0.8;
                   }
                 }
               }

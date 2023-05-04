@@ -450,10 +450,8 @@
 
 
 // modal
-// sign in
-.sign-in-wrapper {
+.form-wrapper {
   .modal {
-    display: none;
     position: fixed;
     inset: 0;
     z-index: 5;
@@ -464,157 +462,6 @@
     }
     .modal-body {
       width: 650px;
-      height: 450px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -55%);
-      background-color: #b67a7a;
-      position: relative;
-      z-index: 10;
-      border-radius: 15px;
-      .modal-inner {
-        // authen-form
-        .auth-form {
-          .out {
-            float: right;
-            color: #f3dddd;
-            // font-size: 24px;
-            margin: 15px 20px;
-            font-size: 28px;
-            font-style: bold;
-            &:hover {
-              cursor: pointer;
-              color: #b7001d;
-
-            }
-          }
-          .auth-form__container {
-            padding: 40px 45px 0px;
-            margin: auto;
-            height: 400px;
-            .auth-form__header {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              .auth-form__heading {
-                font-size: 28px;
-                font-weight: 500;
-                text-transform: uppercase;
-              }
-              .auth-form__switch-btn {
-                color: $color-white;
-                font-size: 24px;
-              }
-              .auth-form__switch-btn:hover {
-                cursor: pointer;
-              }
-            }
-            .auth-form__content {
-              padding: 30px 35px;
-              margin: auto;
-              .auth-form__form {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                .auth-form__group {
-                  .auth-form__input {
-                    height: 50px;
-                    width: 100%;
-                    @include input-style;
-                    border-radius: 10px;
-                    line-height: 50px;
-                    padding-left: 20px;
-                    font-size: 16px;
-                    color: #949598;
-                    &:focus {
-                      outline: 2px solid rgb(241, 2, 2);
-                    }
-                  }
-                }
-                .auth-form__miss {
-                  .auth-form__miss-t {
-                    float: right;
-                    color: $color-hover-bg;
-                    font-size: 14px;
-                    &:hover {
-                      cursor: pointer;
-                    }
-                  }
-                }
-              }
-
-              .auth-form__controls {
-                @include center;
-                width: 100%;
-                padding: 30px 0px;
-                .btn {
-                  width: 50%;
-                  height: 50px;
-                  background-color: $color-hover-bg;
-                  float: right;
-                  border-radius: 10px;
-                  border: none;
-                  font-size: 22px;
-                  color: $color-white;
-                }
-                .btn:hover {
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-          .auth-form__socials {
-            height: 100px;
-            background-color: #e2d7d7;
-            display: flex;
-            padding: 0 45px;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            gap: 30px;
-            position: relative;
-            top: -20px;
-            .btn--with-icon {
-              height: 50px;
-              flex: 1;
-              padding: 0 20px;
-              display: flex;
-              gap: 8px;
-              align-items: center;
-              border: $color-white;
-              background-color: $color-white;
-              text-decoration: none;
-              border-radius: 10px;
-              color: $color-primary;
-              &:hover {
-                background-color: #ebc4c4;
-              }
-              .social-icon {
-                font-size: 24px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-// sign up
-.sign-up-wrapper {
-  .modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 5;
-    .modal-overlay {
-      position: absolute;
-      inset: 0;
-      background-color: #00000033;
-    }
-    .modal-body {
-      width: 650px;
-      height: 500px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -632,89 +479,176 @@
             margin: 15px 20px;
             font-size: 28px;
             font-style: bold;
+            padding: 0px 6px;
             &:hover {
               cursor: pointer;
-              color: #b7001d;
-
+              color: #000;
+              background: #966464;
+              border-radius: 50%;
             }
           }
           .auth-form__container {
-            padding: 40px 45px 0px;
-            margin: auto;
-            height: 400px;
-            .auth-form__header {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              .auth-form__heading {
-                font-size: 28px;
-                font-weight: 500;
-                text-transform: uppercase;
-              }
-              .auth-form__switch-btn {
-                color: $color-white;
-                font-size: 24px;
-              }
-              .auth-form__switch-btn:hover {
-                cursor: pointer;
-              }
-            }
-            .auth-form__content {
-              padding: 15px 35px;
+            .type {
+              display: none;
+              padding: 40px 45px 0px;
               margin: auto;
-              .auth-form__form {
+              .auth-form__header {
                 display: flex;
-                flex-direction: column;
-                gap: 15px;
-                .auth-form__group {
-                  .auth-form__input {
-                    height: 50px;
-                    width: 100%;
-                    @include input-style;
-                    border-radius: 10px;
-                    line-height: 50px;
-                    padding-left: 20px;
-                    font-size: 16px;
-                    color: #949598;
-                    &:focus {
-                      outline: 2px solid rgb(241, 2, 2);
-                    }
-                  }
+                align-items: center;
+                justify-content: space-between;
+                .auth-form__heading {
+                  font-size: 28px;
+                  font-weight: 500;
+                  text-transform: uppercase;
                 }
-              }
-              .auth-form__aside {
-                margin: 15px 0px;
-                .auth-form__policy-text {
-                  font-size: 16px;
-                  .auth-form__policy-link {
-                    color: $color-white;
-                    text-decoration: none;
-                    &:hover {
-                      color: #3700ff;
-                    }
-                  }
-                }
-              }
-              .auth-form__controls {
-                @include center;
-                width: 100%;
-                margin: 13px 0px;
-                .btn {
-                  width: 50%;
-                  height: 50px;
-                  background-color: $color-hover-bg;
-                  float: right;
-                  border-radius: 10px;
-                  border: none;
-                  font-size: 22px;
+                .auth-form__switch-btn {
                   color: $color-white;
+                  font-size: 24px;
+                  padding: 7px 10px;
                 }
-                .btn:hover {
+                .auth-form__switch-btn:hover {
                   cursor: pointer;
+                  color: #4d0808;
                 }
               }
+              .auth-form__content {
+                padding: 30px 35px 0px;
+                margin: auto;
+                .auth-form__form {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  .auth-form__group {
+                    .auth-form__input {
+                      height: 50px;
+                      width: 100%;
+                      @include input-style;
+                      border-radius: 10px;
+                      line-height: 50px;
+                      padding-left: 20px;
+                      font-size: 16px;
+                      color: #949598;
+                      &:focus {
+                        outline: 2px solid rgb(241, 2, 2);
+                      }
+                    }
+                  }
+                  .auth-form__miss {
+                    .auth-form__miss-t {
+                      float: right;
+                      color: $color-hover-bg;
+                      font-size: 14px;
+                      &:hover {
+                        cursor: pointer;
+                        text-decoration: underline
+                      }
+                    }
+                  }
+                }
+  
+                .auth-form__controls {
+                  @include center;
+                  width: 100%;
+                  padding: 30px 0px;
+                  .btn {
+                    width: 50%;
+                    height: 50px;
+                    background-color: $color-hover-bg;
+                    float: right;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: 22px;
+                    color: $color-white;
+                  }
+                  .btn:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                  }
+                }
+              }
+              
+            }
+            .type {
+              display: none;
+              padding: 40px 45px 0px;
+              margin: auto;
+              .auth-form__header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .auth-form__heading {
+                  font-size: 28px;
+                  font-weight: 500;
+                  text-transform: uppercase;
+                }
+                .auth-form__switch-btn {
+                  color: $color-white;
+                  font-size: 24px;
+                }
+                .auth-form__switch-btn:hover {
+                  cursor: pointer;
+                  color: #4d0808;
+                }
+              }
+              .auth-form__content {
+                padding: 30px 35px 0px;
+                margin: auto;
+                .auth-form__form {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 15px;
+                  .auth-form__group {
+                    .auth-form__input {
+                      height: 50px;
+                      width: 100%;
+                      @include input-style;
+                      border-radius: 10px;
+                      line-height: 50px;
+                      padding-left: 20px;
+                      font-size: 16px;
+                      color: #949598;
+                      &:focus {
+                        outline: 2px solid rgb(241, 2, 2);
+                      }
+                    }
+                  }
+                }
+                .auth-form__aside {
+                  margin: 15px 0px;
+                  .auth-form__policy-text {
+                    font-size: 16px;
+                    .auth-form__policy-link {
+                      color: $color-white;
+                      text-decoration: none;
+                      &:hover {
+                        color: #3700ff;
+                      }
+                    }
+                  }
+                }
+                .auth-form__controls {
+                  @include center;
+                  width: 100%;
+                  .btn {
+                    width: 50%;
+                    height: 50px;
+                    background-color: $color-hover-bg;
+                    float: right;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: 22px;
+                    color: $color-white;
+                  }
+                  .btn:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                  }
+                }
+              }
+              
             }
           }
+
           .auth-form__socials {
             height: 100px;
             background-color: #e2d7d7;
@@ -744,9 +678,15 @@
                 font-size: 24px;
               }
             }
+            .facebook-icon {
+              color: #5021f8;
+            }
           }
         }
       }
     }
+  }
+  &.hide {
+    display: none;
   }
 }

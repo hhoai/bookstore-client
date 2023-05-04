@@ -1,32 +1,45 @@
 // sign up
-var signupButton = document.querySelector(".signup");
-var signupForm = document.querySelector(".sign-up-wrapper .modal");
-var loginButton = document.querySelector(".login");
-var loginForm = document.querySelector(".sign-in-wrapper .modal");
-var outButton = document.querySelectorAll(".out");
-var switchButton = document.querySelectorAll(".auth-form__switch-btn");
+const formWrapper = document.querySelector(".form-wrapper");
+const signupButton = document.querySelector(".signup");
+const loginButton = document.querySelector(".login");
+const outButton = document.querySelector(".out");
+const switchButton = document.querySelectorAll(".auth-form__switch-btn");
+let nextForm = "";
+
+const toggleShow = (el, status) => {
+  el.style.display = status;
+};
+
+const openForm = (type) => {
+  formWrapper.classList.remove("hide");
+  const remainingKey = type === "sign-up" ? "sign-in" : "sign-up";
+  const authForm = document.querySelector(`.auth-form__container .${type}`);
+  const remainingForm = document.querySelector(`.auth-form__container .${remainingKey}`);
+  toggleShow(authForm, "block");
+  toggleShow(remainingForm, "none");
+}
 
 signupButton.onclick = function (e) {
-  signupForm.style.display = "block";
+  openForm("sign-up");
+  nextForm = "sign-in";
 };
 
 loginButton.onclick = function (e) {
-  loginForm.style.display = "block";
+  openForm("sign-in");
+  nextForm = "sign-up";
 };
 
-for (value of outButton) {
-  value.onclick = function (e) {
-    signupForm.style.display = "none";
-    loginForm.style.display = "none";
-  };
+outButton.onclick = function (e) {
+  formWrapper.classList.add("hide");
+};
+
+for (const button of switchButton) {
+  button.onclick = () => {
+    openForm(nextForm);
+    nextForm = nextForm === "sign-up" ? "sign-in" : "sign-up";
+  }
 }
 
-for (value of switchButton) {
-  value.onclick = function (e) {
-    signupForm.style.display = "block";
-    loginForm.style.display = "block";
-  };
-}
 
 // contact
 var nameInput = document.querySelector("#name");

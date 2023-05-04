@@ -939,10 +939,13 @@ li {
   margin: 15px 20px;
   font-size: 28px;
   font-style: bold;
+  padding: 0px 6px;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .out:hover {
   cursor: pointer;
-  color: #b7001d;
+  color: #000;
+  background: #966464;
+  border-radius: 50%;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type {
   display: none;
@@ -962,9 +965,11 @@ li {
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__header .auth-form__switch-btn {
   color: #fff;
   font-size: 24px;
+  padding: 7px 10px;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__header .auth-form__switch-btn:hover {
   cursor: pointer;
+  color: #4d0808;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content {
   padding: 30px 35px 0px;
@@ -997,6 +1002,7 @@ li {
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content .auth-form__form .auth-form__miss .auth-form__miss-t:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content .auth-form__controls {
   display: flex;
@@ -1017,6 +1023,7 @@ li {
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content .auth-form__controls .btn:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type {
   display: none;
@@ -1039,6 +1046,7 @@ li {
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__header .auth-form__switch-btn:hover {
   cursor: pointer;
+  color: #4d0808;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content {
   padding: 30px 35px 0px;
@@ -1095,6 +1103,7 @@ li {
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content .auth-form__controls .btn:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__socials {
   height: 100px;
