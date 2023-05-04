@@ -439,7 +439,7 @@ li {
   justify-content: space-between;
 }
 .book-detail .container .content .product .product-button .product-a {
-  width: 45%;
+  width: 48%;
   font-weight: 300;
 }
 .book-detail .container .content .product .product-button .product-a .button {
@@ -457,7 +457,7 @@ li {
   cursor: pointer;
 }
 .book-detail .container .content .product .product-button .product-a .add-to-cart {
-  background-color: #0fa193;
+  background-color: #0fa17f;
 }
 .book-detail .container .content .product .product-button .product-a .buy-now {
   background-color: #ce0021;
@@ -922,7 +922,7 @@ li {
   color: #949598;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content .auth-form__form .auth-form__group .auth-form__input:focus {
-  outline: 2px solid rgb(241, 2, 2);
+  outline: 2px solid rgba(26, 203, 96, 0.57);
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content .auth-form__form .auth-form__miss .auth-form__miss-t {
   float: right;
@@ -999,7 +999,7 @@ li {
   color: #949598;
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content .auth-form__form .auth-form__group .auth-form__input:focus {
-  outline: 2px solid rgb(241, 2, 2);
+  outline: 2px solid rgba(26, 203, 96, 0.57);
 }
 .form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form__container .type .auth-form__content .auth-form__aside {
   margin: 15px 0px;

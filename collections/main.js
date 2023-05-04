@@ -22,6 +22,7 @@ const openForm = (type) => {
 signupButton.onclick = function (e) {
   openForm("sign-up");
   nextForm = "sign-in";
+  console.log("aaaaaaaa")
 };
 
 loginButton.onclick = function (e) {

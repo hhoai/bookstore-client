@@ -49,7 +49,7 @@ output = document.querySelector(".selector");
 
 
   minusButton.addEventListener("click", () => {
-    if (output.value < 1) {
+    if (output.value < 2) {
       return 0;
     }
     output.value--;
