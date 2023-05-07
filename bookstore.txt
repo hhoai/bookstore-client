@@ -53,3 +53,5 @@ BOOKSTORE
 function: login, signup
 					contact
 					
+- admin
+- gio hang user
