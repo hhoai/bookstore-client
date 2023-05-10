@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./books.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- begin nav -->
+    <div class="navigation">
+      <div class="nav-container">
+        <div class="content">
+          <div class="header">Books</div>
+          <div class="link">
+            <a href="../index.html">Admin</a>
+            / Books
+          </div>
+        </div>
+        <div class="search">
+          <div class="search-container">
+            <input type="search" placeholder="Tìm kiếm... " />
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+        <div class="account">
+          <i class="far fa-bell acc-icon"></i>
+          <i class="far fa-envelope acc-icon"></i>
+          <i class="far fa-shopping-cart acc-icon"></i>
+          <div class="account-container">
+            <img src="../../img/account.png" alt="account" />
+            <div class="information">
+              <div class="acc-name">Huynh Hoai</div>
+              <div class="acc-role">Admin</div>
+              <div class="infor-admin hide">
+                <li class="h50">Xin chào Huynh Hoai</li>
+                <li class="infor-items">
+                  <i class="fas fa-user-check inf-icon"></i>
+                  <div class="detail">
+                    <div class="uppercase">Thông tin cá nhân</div>
+                    <div class="description">Xem chi tiết hồ sơ cá nhân</div>
+                  </div>
+                </li>
+                <li class="infor-items">
+                  <i class="far fa-address-card inf-icon"></i>
+                  <div class="detail">
+                    <div class="uppercase">Chỉnh sửa thông tin cá nhân</div>
+                    <div class="description">Sửa đổi thông tin cá nhân</div>
+                  </div>
+                </li>
+                <li class="infor-items">
+                  <i class="fas fa-cog inf-icon"></i>
+                  <div class="detail">
+                    <div class="uppercase">Cài đặt</div>
+                    <div class="description">Quản lý thông tin cá nhân</div>
+                  </div>
+                </li>
+                <div class="sign-out">
+                  <button class="btn">
+                    Đăng xuất
+                    <i class="fas fa-sign-out-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end nav -->
+
+    <!-- begin sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <img src="../../img/favicon.png" alt="logo" class="sidebar-img" />
+          <div class="sidebar-header-text">Bookstore</div>
+        </div>
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="sidebar-container">
+        <li class="sidebar-content">
+          <div class="sidebar-items">
+            <div class="left">
+              <i class="fas fa-home icon-left"></i>
+              <p class="sb-text">Shop</p>
+            </div>
+            <i class="fas fa-chevron-right icon-right"></i>
+          </div>
+          <ul class="sub-nav hide">
+            <li class="sub-nav-content">
+              <a href="../index.html" class="sub-nav-items">
+                <div class="sub-nav-t">
+                  <i class="fas fa-home"></i>
+                  Trang chủ
+                </div>
+              </a>
+            </li>
+            <li class="sub-nav-content">
+              <div class="sub-nav-items list">
+                <div class="sub-nav-t">
+                  <i class="fas fa-list"></i>
+                  Danh mục sản phẩm
+                </div>
+                <i class="fas fa-chevron-right icon-right"></i>
+              </div>
+              <ul class="category hide">
+                <a href="../../collections/" class="menu-content">
+                  <div class="menu-items">Thiếu nhi</div>
+                  <i class="fas fa-angle-right icon-right"></i>
+                </a>
+                <a href="../../collections/" class="menu-content">
+                  <div class="menu-items">Văn học</div>
+                  <i class="fas fa-angle-right icon-right"></i>
+                </a>
+                <a href="../../collections/" class="menu-content">
+                  <div class="menu-items">Tâm lý đời sống</div>
+                  <i class="fas fa-angle-right icon-right"></i>
+                </a>
+                <a href="../../collections/" class="menu-content">
+                  <div class="menu-items">Khoa học</div>
+                  <i class="fas fa-angle-right icon-right"></i>
+                </a>
+                <a href="../../collections/" class="menu-content">
+                  <div class="menu-items">Chính trị lịch sử</div>
+                  <i class="fas fa-angle-right icon-right"></i>
+                </a>
+                <a href="../../collections/" class="menu-content">
+                  <div class="menu-items">Tham khảo</div>
+                  <i class="fas fa-angle-right icon-right"></i>
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="sidebar-content">
+          <div class="sidebar-items color">
+            <div class="left">
+              <i class="fas fa-user-lock icon-left"></i>
+              <p class="sb-text">Admin</p>
+            </div>
+            <i class="fas fa-chevron-right icon-right"></i>
+          </div>
+          <ul class="sub-nav">
+            <li class="sub-nav-content">
+              <a href="../index.html" class="sub-nav-items">
+                <div class="sub-nav-t">
+                  <i class="fas fa-home"></i>
+                  Dashboard
+                </div>
+              </a>
+            </li>
+            <li class="sub-nav-content">
+              <a href="./index.html" class="sub-nav-items color">
+                <div class="sub-nav-t">
+                  <i class="fas fa-book"></i>
+                  Books
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- end sidebar -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
