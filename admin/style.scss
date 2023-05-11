@@ -351,5 +351,112 @@
       }
       
     }
+    .invoices {
+      background-color: $color-white;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      .invoices-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        .invoices-header-title {
+          font-weight: 500;
+          font-size: 24px;
+          text-transform: uppercase;
+        }
+        .invoices-header-nav {
+          position: relative;
+          .fa-ellipsis-h {
+            &:hover {
+              cursor: pointer;
+              color: $color-primary;
+            }
+            &.color {
+              color: $color-primary;
+            }
+          }
+          .invoices-nav-container {
+            position: absolute;
+            right: 0px;
+            top: 30px;
+            z-index: 1;
+            background-color: $color-white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .nav-items {
+              width: 150px;
+              display: flex;
+              gap: 10px;
+              padding: 10px 15px;
+              &:hover {
+                cursor: pointer;
+                &.view {
+                  color: #e6ab52;
+                }
+                &.delete {
+                  color: #ee232e;
+                }
+                &.edit {
+                  color: #496e36;
+                }
+                &.print {
+                  color: #5bcc23;
+                }
+                &.download {
+                  color: #ce575d;
+                }
+              }
+              &.hide {
+                display: none;
+              }
+            }
+            
+          }
+        }
+      }
+      .invoices-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 150px 30px 40px;
+        .column {
+          .cl-header {
+            // text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 500;
+            color: #777D74;
+            padding-bottom: 20px;
+          }
+          .cl-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .row {
+              width: fit-content;
+              padding: 5px;
+              border-radius: 6px;
+            }
+          }
+        }
+        .status {
+          .cl-content {
+            .row {
+              background-color: #689f4d;
+              color: $color-white;
+            }
+            .red {
+              background-color: #b6272e;
+            }
+          }
+        }
+      }
+    }
+
   }
+}
+
+
+.footer {
+  position: relative;
+  z-index: 1;
+  background-color: #fbfcff;
+  padding-top: 96px;
+  padding-left: 300px;
 }

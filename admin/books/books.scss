@@ -291,3 +291,73 @@
 .hide {
   display: none;
 }
+
+
+// container 
+.container {
+  position: relative;
+  z-index: 1;
+  background-color: #fbfcff;
+  padding-top: 96px;
+  padding-left: 300px;
+  .book-list {
+    margin: 30px;
+    background-color: $color-white;
+    box-shadow:0px 4px 20px 0px rgba(44, 101, 144, 0.1);
+
+    .book-list-header {
+      display: flex;
+      justify-content: space-between;
+      .text {
+
+      }
+      .btn {
+
+      }
+    }
+    .book-list-content {
+      .row1 {
+        display: flex;
+      justify-content: space-between;
+
+      }
+
+      table {
+        border: 1px solid #dee2e6;
+        border-collapse: collapse;
+        .thead {
+          th {
+          border: 1px solid #dee2e6;
+          }
+        }
+        .troad {
+          td {
+          border: 1px solid #dee2e6;
+          }
+          .name {
+            text-transform: capitalize;
+          }
+
+          .img {
+            padding: 5px;
+            img {
+              height: 100px;
+            }
+          }
+        }
+      }
+      .row2 {
+        
+      }
+
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  background-color: #fbfcff;
+  padding-top: 96px;
+  padding-left: 300px;
+}
