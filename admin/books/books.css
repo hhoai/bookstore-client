@@ -225,7 +225,7 @@ li {
   padding: 0px 15px;
 }
 .sidebar .sidebar-container .sidebar-content .sidebar-items {
-  color: #777D74;
+  color: #777d74;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -253,7 +253,7 @@ li {
 .sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .sub-nav-items {
   display: flex;
   justify-content: space-between;
-  color: #777D74;
+  color: #777d74;
   font-size: 18px;
   padding: 5px 0px;
 }
@@ -272,7 +272,7 @@ li {
 }
 .sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .category .menu-content {
   padding: 10px 0px;
-  color: #777D74;
+  color: #777d74;
   display: flex;
   justify-content: space-between;
 }
@@ -306,10 +306,58 @@ li {
 .container .book-list .book-list-header {
   display: flex;
   justify-content: space-between;
+  padding: 25px 20px;
+  border-bottom: 1px solid #edeeec;
+}
+.container .book-list .book-list-header .text {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 41px;
+}
+.container .book-list .book-list-header .btn button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #ce0021;
+  border: none;
+  font-size: 18px;
+}
+.container .book-list .book-list-header .btn button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.container .book-list .book-list-content {
+  padding: 0px 20px;
 }
 .container .book-list .book-list-content .row1 {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0px;
+  font-size: 18px;
+}
+.container .book-list .book-list-content .row1 .show {
+  display: flex;
+  gap: 8px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.container .book-list .book-list-content .row1 .show select {
+  border-color: #dbddd9;
+  padding: 0px 5px;
+}
+.container .book-list .book-list-content .row1 .search {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.container .book-list .book-list-content .row1 .search input {
+  border: 1px solid #dbddd9;
+  padding: 5px;
+  border-radius: 4px;
+}
+.container .book-list .book-list-content .row1 .search input:focus {
+  outline: 1px solid #66b517;
 }
 .container .book-list .book-list-content table {
   border: 1px solid #dee2e6;
@@ -317,23 +365,95 @@ li {
 }
 .container .book-list .book-list-content table .thead th {
   border: 1px solid #dee2e6;
+  padding: 10px 7px;
 }
 .container .book-list .book-list-content table .troad td {
   border: 1px solid #dee2e6;
+  text-align: center;
 }
 .container .book-list .book-list-content table .troad .name {
   text-transform: capitalize;
 }
-.container .book-list .book-list-content table .troad .img {
-  padding: 5px;
-}
 .container .book-list .book-list-content table .troad .img img {
   height: 100px;
 }
+.container .book-list .book-list-content table .troad .description {
+  text-align: justify;
+  padding: 8px 10px;
+}
+.container .book-list .book-list-content table .troad .action .tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 0px 10px;
+}
+.container .book-list .book-list-content table .troad .action .tooltip .tooltiptext {
+  visibility: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ae2020;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px;
+  /* Position the tooltip */
+  position: absolute;
+  top: -45px;
+  right: -14px;
+  z-index: 1;
+}
+.container .book-list .book-list-content table .troad .action .tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ae2020 transparent transparent transparent;
+}
+.container .book-list .book-list-content table .troad .action .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.container .book-list .book-list-content table .troad .action .tooltip.edit:hover {
+  color: #4f8b14;
+}
+.container .book-list .book-list-content table .troad .action .tooltip.edit:hover .tooltiptext {
+  background-color: #4f8b14;
+}
+.container .book-list .book-list-content table .troad .action .tooltip.edit:hover .tooltiptext::after {
+  border-color: #4f8b14 transparent transparent transparent;
+}
+.container .book-list .book-list-content table .troad .action .tooltip.delete:hover {
+  color: #ae2020;
+}
+.container .book-list .book-list-content .row2 {
+  padding: 25px 30px 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: #676767;
+}
+.container .book-list .book-list-content .row2 .num-of-page {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container .book-list .book-list-content .row2 .num-of-page .num {
+  font-size: 20px;
+}
+.container .book-list .book-list-content .row2 .num-of-page i:hover {
+  color: #000;
+  cursor: pointer;
+}
+
 .footer {
   position: relative;
   z-index: 1;
-  background-color: #fbfcff;
-  padding-top: 96px;
-  padding-left: 300px;
+  background-color: #fff;
+  padding: 20px 0px 20px 350px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+  color: #777d74;
+}
+.footer a {
+  color: #6a6b6a;
 }/*# sourceMappingURL=books.css.map */
