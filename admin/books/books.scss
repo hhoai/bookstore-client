@@ -341,6 +341,9 @@
           select {
             border-color: #dbddd9;
             padding: 0px 5px;
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
         .search {

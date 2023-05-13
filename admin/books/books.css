@@ -346,6 +346,9 @@ li {
   border-color: #dbddd9;
   padding: 0px 5px;
 }
+.container .book-list .book-list-content .row1 .show select:hover {
+  cursor: pointer;
+}
 .container .book-list .book-list-content .row1 .search {
   display: flex;
   gap: 8px;
