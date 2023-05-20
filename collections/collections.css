@@ -33,19 +33,26 @@ li {
 #header .welcome .welcome-container .welcome-left {
   float: left;
 }
-#header .welcome .welcome-container .welcome-log {
+#header .welcome .welcome-container .welcome-log,
+#header .welcome .welcome-container .welcome-login {
   display: flex;
   float: right;
 }
-#header .welcome .welcome-container .welcome-log > a {
+#header .welcome .welcome-container .welcome-log > a,
+#header .welcome .welcome-container .welcome-login > a {
   margin: 0px 5px;
   font-size: 12px;
   color: #b0b0b0;
   text-decoration: none;
 }
-#header .welcome .welcome-container .welcome-log a:hover {
+#header .welcome .welcome-container .welcome-log a:hover,
+#header .welcome .welcome-container .welcome-login a:hover {
   cursor: pointer;
   color: #ce0021;
+}
+#header .welcome .welcome-container .welcome-log.hide,
+#header .welcome .welcome-container .welcome-login.hide {
+  display: none;
 }
 #header .header-container {
   padding: 0px 15px;

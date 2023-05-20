@@ -429,6 +429,9 @@ li {
 .container .book-list .book-list-content table .troad .action .tooltip.delete:hover {
   color: #ae2020;
 }
+.container .book-list .book-list-content table .troad .action .tooltip:hover {
+  cursor: pointer;
+}
 .container .book-list .book-list-content .row2 {
   padding: 25px 30px 25px 0px;
   display: flex;

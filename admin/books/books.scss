@@ -432,6 +432,9 @@
               &.delete:hover {
                 color: #ae2020;
               }
+              &:hover {
+                cursor: pointer;
+              }
             }
           }
         }

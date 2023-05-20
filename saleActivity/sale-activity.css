@@ -33,19 +33,26 @@ li {
 .welcome .welcome-container .welcome-left {
   float: left;
 }
-.welcome .welcome-container .welcome-log {
+.welcome .welcome-container .welcome-log,
+.welcome .welcome-container .welcome-login {
   display: flex;
   float: right;
 }
-.welcome .welcome-container .welcome-log > a {
+.welcome .welcome-container .welcome-log > a,
+.welcome .welcome-container .welcome-login > a {
   margin: 0px 5px;
   font-size: 12px;
   color: #b0b0b0;
   text-decoration: none;
 }
-.welcome .welcome-container .welcome-log a:hover {
+.welcome .welcome-container .welcome-log a:hover,
+.welcome .welcome-container .welcome-login a:hover {
   cursor: pointer;
   color: #ce0021;
+}
+.welcome .welcome-container .welcome-log.hide,
+.welcome .welcome-container .welcome-login.hide {
+  display: none;
 }
 
 .header-container {

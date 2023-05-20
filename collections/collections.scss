@@ -17,7 +17,8 @@
       .welcome-left {
         float: left;
       }
-      .welcome-log {
+      .welcome-log,
+      .welcome-login {
         display: flex;
         float: right;
         & > a {
@@ -28,6 +29,9 @@
         a:hover {
           cursor: pointer;
           color: $color-primary;
+        }
+        &.hide {
+          display: none;
         }
       }
     }
