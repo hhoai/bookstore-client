@@ -163,12 +163,12 @@ li {
   padding: 15px 0px;
 }
 .navigation .nav-container .account .account-container .information .infor-admin .sign-out .btn {
-  padding: 7px;
+  padding: 7px 10px;
   border-radius: 6px;
   border: none;
-  color: #fff;
   font-size: 16px;
   background-color: #ce0021;
+  color: #fff;
 }
 .navigation .nav-container .account .account-container .information .infor-admin .sign-out .btn:hover {
   cursor: pointer;

@@ -146,12 +146,12 @@
               text-align: center;
               padding: 15px 0px;
               .btn {
-                padding: 7px;
+                padding: 7px 10px;
                 border-radius: 6px;
                 border: none;
-                color: $color-white;
                 font-size: 16px;
                 background-color: $color-primary;
+                color: $color-white;
                 &:hover {
                   cursor: pointer;
                   opacity: 0.6;
