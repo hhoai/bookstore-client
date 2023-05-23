@@ -68,10 +68,10 @@
                   </div>
                 </li>
                 <div class="sign-out">
-                  <button class="btn">
+                  <a class="btn" href="../../index.html">
                     Đăng xuất
                     <i class="fas fa-sign-out-alt"></i>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -175,7 +175,7 @@
         <div class="book-list-header">
           <div class="text">Hệ thống sách</div>
           <div class="btn">
-            <button>Thêm sách mới</button>
+            <button onclick="openForm()">Thêm sách mới</button>
           </div>
         </div>
         <div class="book-list-content">
@@ -519,6 +519,69 @@
       Powered by <a href="https://github.com/hhoai">hh</a>
     </div>
     
+    <div class="form-wrapper hide">
+      <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-body">
+          <div class="modal-inner">
+            <!-- authen form -->
+            <div class="auth-form">
+              <div class="out" onclick="exit()">
+                <i class="fas fa-times"></i>
+                <!-- <AiOutlineClose /> -->
+              </div>
+              <div class="auth-form-container">
+                <div class="auth-form-header">
+                  Chi tiết sản phẩm
+                </div>
+                <div class="auth-form-content">
+                  <div class="items">
+                    <label for="">ImageUrl</label>
+                    <input type="text" name="imageUrl" required>
+                  </div>
+                  <span class="img-error error"></span>
+                  <div class="items">
+                    <label for="">Tên Sách</label>
+                    <input type="text" name="name" required>
+                  </div>
+                  <span class="name-error error"></span>
+                  <div class="items">
+                    <label for="">Thể Loại</label>
+                    <input type="text" name="category" required>
+                  </div>
+                  <span class="category-error error"></span>
+                  <div class="items">
+                    <label for="">Mô Tả</label>
+                    <input type="text" name="description" required>
+                  </div>
+                  <span class="description-error error"></span>
+                  <div class="items">
+                    <label for="">Giá Sách</label>
+                    <input type="number" name="price" required>
+                  </div>
+                  <span class="price-error error"></span>
+                  <div class="items">
+                    <label for="">Khuyến Mại</label>
+                    <input type="number" name="sale" required>
+                  </div>
+                  <span class="sale-error error"></span>
+                  <div class="items">
+                    <label for="">Số Lượng</label>
+                    <input type="number" name="quantity" required>
+                  </div>
+                  <span class="quantity-error error"></span>
+                  <div class="btn">
+                    <button onclick="addBook()">Thêm sản phẩm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <script src="main.js"></script>
   </body>
 </html>

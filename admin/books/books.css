@@ -186,7 +186,7 @@ li {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 6;
+  z-index: 2;
   width: 300px;
   height: 100%;
   box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
@@ -462,4 +462,95 @@ li {
 }
 .footer a {
   color: #6a6b6a;
+}
+
+.form-wrapper .modal {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+}
+.form-wrapper .modal .modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.form-wrapper .modal .modal-body {
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  border-radius: 15px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .out {
+  float: right;
+  color: #f3dddd;
+  margin: 15px 20px;
+  font-size: 28px;
+  font-style: bold;
+  padding: 0px 6px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .out:hover {
+  cursor: pointer;
+  color: #000;
+  background: #966464;
+  border-radius: 50%;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container {
+  padding: 30px 20px 0px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-header {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  padding: 20px 0px 20px 20px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .items {
+  height: 30px;
+  display: flex;
+  margin: 10px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .items input {
+  border: 1px solid #a19393;
+  border-radius: 6px;
+  height: 30px;
+  width: 770px;
+  padding: 0px 10px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .items input:focus {
+  outline: 1px solid #b51717;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .error {
+  font-size: 14px;
+  color: #ff0000;
+  margin-left: 120px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .btn {
+  margin-left: 715px;
+  padding-bottom: 10px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .btn button {
+  padding: 10px 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  background-color: #ce0021;
+  color: #fff;
+  font-size: 16px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .btn button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.form-wrapper.hide {
+  display: none;
 }/*# sourceMappingURL=books.css.map */
