@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Amatic SC", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navigation {
+  background-color: #fbfcff;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 5;
+  height: 96px;
+  width: calc(100% - 300px);
+}
+.navigation .nav-container {
+  border-bottom: 1px solid #ededf0;
+  width: 100%;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.navigation .nav-container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+  gap: 5px;
+}
+.navigation .nav-container .content .header {
+  font-weight: 700;
+  font-size: 20px;
+}
+.navigation .nav-container .content .link {
+  font-size: 14px;
+}
+.navigation .nav-container .content .link a {
+  color: #ce0021;
+}
+.navigation .nav-container .search {
+  margin: auto;
+  width: 350px;
+}
+.navigation .nav-container .search .search-container {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 6px;
+}
+.navigation .nav-container .search .search-container input {
+  border: none;
+  width: 350px;
+  height: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+  padding: 0px 40px 0px;
+}
+.navigation .nav-container .search .search-container input:focus {
+  outline: 2px solid #a70a12;
+}
+.navigation .nav-container .search .search-container .fa-search {
+  margin: auto;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  font-size: 22px;
+}
+.navigation .nav-container .search .search-container .fa-search:hover {
+  cursor: pointer;
+}
+.navigation .nav-container .account {
+  display: flex;
+  gap: 25px;
+  height: 96px;
+}
+.navigation .nav-container .account .acc-icon {
+  margin: auto;
+  font-weight: 700;
+  font-size: 18px;
+  color: #a19393;
+}
+.navigation .nav-container .account .acc-icon:hover {
+  color: #ce0021;
+  cursor: pointer;
+}
+.navigation .nav-container .account .account-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+}
+.navigation .nav-container .account .account-container img {
+  height: 55px;
+}
+.navigation .nav-container .account .account-container .information {
+  padding: 5px 10px 0px 0px;
+  position: relative;
+}
+.navigation .nav-container .account .account-container .information .acc-name {
+  font-weight: 700;
+}
+.navigation .nav-container .account .account-container .information .acc-role {
+  font-size: 14px;
+}
+.navigation .nav-container .account .account-container .information .infor-admin {
+  width: 300px;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .h50 {
+  height: 70px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #ce0021;
+  color: #fff;
+  padding: 22px;
+  font-size: 20px;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .infor-items {
+  padding: 10px 5px;
+  background-color: #fff;
+  display: flex;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .infor-items .inf-icon {
+  color: #ce575d;
+  font-size: 18px;
+  padding: 15px;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .infor-items .detail .uppercase {
+  color: #555555;
+  font-size: 18px;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .infor-items .detail .description {
+  color: #757575;
+  font-size: 14px;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .infor-items:hover .detail .uppercase {
+  color: #b6272e;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .infor-items:hover .detail .description {
+  color: #ab8080;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .sign-out {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px 0px;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .sign-out .btn {
+  padding: 7px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  background-color: #ce0021;
+}
+.navigation .nav-container .account .account-container .information .infor-admin .sign-out .btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.navigation .nav-container .account .account-container .information .infor-admin.hide {
+  display: none;
+}
+.navigation .nav-container .account .account-container:hover {
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 300px;
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+}
+.sidebar .sidebar-header {
+  padding: 15px 25px;
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar .sidebar-header .logo {
+  display: flex;
+  gap: 8px;
+}
+.sidebar .sidebar-header .logo .sidebar-img {
+  height: 40px;
+  margin: auto;
+}
+.sidebar .sidebar-header .logo .sidebar-header-text {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ce0021;
+  line-height: 70px;
+}
+.sidebar .sidebar-header .fa-bars {
+  color: #ce0021;
+  font-size: 24px;
+  line-height: 70px;
+}
+.sidebar .sidebar-header .fa-bars:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.sidebar .sidebar-container {
+  padding: 0px 15px;
+}
+.sidebar .sidebar-container .sidebar-content .sidebar-items {
+  color: #777d74;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.sidebar .sidebar-container .sidebar-content .sidebar-items .left {
+  display: flex;
+  gap: 10px;
+}
+.sidebar .sidebar-container .sidebar-content .sidebar-items:hover {
+  color: #ce0021;
+  cursor: pointer;
+}
+.sidebar .sidebar-container .sidebar-content .sidebar-items.color {
+  color: #ce0021;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav {
+  padding-left: 25px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .sub-nav-items {
+  display: flex;
+  justify-content: space-between;
+  color: #777d74;
+  font-size: 18px;
+  padding: 5px 0px;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .sub-nav-items .sub-nav-t i {
+  padding-right: 5px;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .sub-nav-items:hover {
+  color: #ce0021;
+  cursor: pointer;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .sub-nav-items.color {
+  color: #ce0021;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .category {
+  padding: 10px 0px 10px 10px;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .category .menu-content {
+  padding: 10px 0px;
+  color: #777d74;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .category .menu-content .menu-items {
+  text-transform: uppercase;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav .sub-nav-content .category .menu-content:hover {
+  cursor: pointer;
+  color: #ce0021;
+}
+.sidebar .sidebar-container .sidebar-content .sub-nav.hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  background-color: #fbfcff;
+  padding-top: 96px;
+  padding-left: 300px;
+}
+.container .book-list {
+  margin: 30px;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(44, 101, 144, 0.1);
+}
+.container .book-list .book-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+  border-bottom: 1px solid #edeeec;
+}
+.container .book-list .book-list-header .text {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 41px;
+}
+.container .book-list .book-list-header .btn button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #ce0021;
+  border: none;
+  font-size: 18px;
+}
+.container .book-list .book-list-header .btn button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.container .book-list .book-list-content {
+  padding: 0px 20px;
+}
+.container .book-list .book-list-content .row1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  font-size: 18px;
+}
+.container .book-list .book-list-content .row1 .show {
+  display: flex;
+  gap: 8px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.container .book-list .book-list-content .row1 .show select {
+  border-color: #dbddd9;
+  padding: 0px 5px;
+}
+.container .book-list .book-list-content .row1 .show select:hover {
+  cursor: pointer;
+}
+.container .book-list .book-list-content .row1 .search {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.container .book-list .book-list-content .row1 .search input {
+  border: 1px solid #dbddd9;
+  padding: 5px;
+  border-radius: 4px;
+}
+.container .book-list .book-list-content .row1 .search input:focus {
+  outline: 1px solid #66b517;
+}
+.container .book-list .book-list-content table {
+  border: 1px solid #dee2e6;
+  border-collapse: collapse;
+}
+.container .book-list .book-list-content table .thead th {
+  border: 1px solid #dee2e6;
+  padding: 10px 7px;
+}
+.container .book-list .book-list-content table .troad td {
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+.container .book-list .book-list-content table .troad .name {
+  text-transform: capitalize;
+}
+.container .book-list .book-list-content table .troad .img img {
+  height: 100px;
+}
+.container .book-list .book-list-content table .troad .description {
+  text-align: justify;
+  padding: 8px 10px;
+}
+.container .book-list .book-list-content table .troad .action .tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 0px 10px;
+}
+.container .book-list .book-list-content table .troad .action .tooltip .tooltiptext {
+  visibility: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ae2020;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px;
+  /* Position the tooltip */
+  position: absolute;
+  top: -45px;
+  right: -14px;
+  z-index: 1;
+}
+.container .book-list .book-list-content table .troad .action .tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ae2020 transparent transparent transparent;
+}
+.container .book-list .book-list-content table .troad .action .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.container .book-list .book-list-content table .troad .action .tooltip.edit:hover {
+  color: #4f8b14;
+}
+.container .book-list .book-list-content table .troad .action .tooltip.edit:hover .tooltiptext {
+  background-color: #4f8b14;
+}
+.container .book-list .book-list-content table .troad .action .tooltip.edit:hover .tooltiptext::after {
+  border-color: #4f8b14 transparent transparent transparent;
+}
+.container .book-list .book-list-content table .troad .action .tooltip.delete:hover {
+  color: #ae2020;
+}
+.container .book-list .book-list-content table .troad .action .tooltip:hover {
+  cursor: pointer;
+}
+.container .book-list .book-list-content .row2 {
+  padding: 25px 30px 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: #676767;
+}
+.container .book-list .book-list-content .row2 .num-of-page {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container .book-list .book-list-content .row2 .num-of-page .num {
+  font-size: 20px;
+}
+.container .book-list .book-list-content .row2 .num-of-page i:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  padding: 20px 0px 20px 350px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+  color: #777d74;
+}
+.footer a {
+  color: #6a6b6a;
+}
+
+.form-wrapper .modal {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+}
+.form-wrapper .modal .modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.form-wrapper .modal .modal-body {
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  border-radius: 15px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .out {
+  float: right;
+  color: #f3dddd;
+  margin: 15px 20px;
+  font-size: 28px;
+  font-style: bold;
+  padding: 0px 6px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .out:hover {
+  cursor: pointer;
+  color: #000;
+  background: #966464;
+  border-radius: 50%;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container {
+  padding: 30px 20px 0px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-header {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  padding: 20px 0px 20px 20px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .items {
+  height: 30px;
+  display: flex;
+  margin: 10px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .items input {
+  border: 1px solid #a19393;
+  border-radius: 6px;
+  height: 30px;
+  width: 770px;
+  padding: 0px 10px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .items input:focus {
+  outline: 1px solid #b51717;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .error {
+  font-size: 14px;
+  color: #ff0000;
+  margin-left: 120px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .btn {
+  margin-left: 715px;
+  padding-bottom: 10px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .btn button {
+  padding: 10px 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  background-color: #ce0021;
+  color: #fff;
+  font-size: 16px;
+}
+.form-wrapper .modal .modal-body .modal-inner .auth-form .auth-form-container .auth-form-content .btn button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.form-wrapper.hide {
+  display: none;
+}/*# sourceMappingURL=books.css.map */
