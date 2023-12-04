@@ -1,0 +1,136 @@
+/* mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  .header-container {
+    .logo {
+    }
+    .search {
+      display: none;
+      input {
+        width: 250px;
+      }
+    }
+    .hotline,
+    .shopping-cart {
+      display: none;
+    }
+  }
+
+  .nav-header {
+    .nav-container {
+      display: flex;
+      // flex-direction: column;
+      .nav-left {
+        &:hover{
+
+        }
+      }
+      .nav-right {
+        display: none;
+      }
+      &:hover .nav-right {
+      }
+    }
+  }
+
+
+}
+
+/* tablet: width >= 740px && < 1024px */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+  .header-container {
+    .logo {
+    }
+    .search {
+      input {
+        width: 250px;
+      }
+    }
+    .hotline,
+    .shopping-cart {
+      display: none;
+    }
+  }
+
+  .home-page {
+    .slider {
+      .slider-container {
+        .menu {
+          display: none;
+        }
+        .slidershow {
+          padding: 0px 15px;
+          .img-slideshow {
+            position: relative;
+            left: 0px;
+            top: 2px;
+            max-width: 100%;
+          }
+        }
+      }
+      .banner {
+        padding: 0px 15px;
+        position: relative;
+        left: 0px;
+        .banner-items {
+          .banner-img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .new-book {
+      .book-a {
+        .book-container {
+          .book-link {
+            &:first-child,
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .bestseller-book,
+    .kid-book,
+    .raise-children-book {
+      padding: 0px 15px;
+      .book-a {
+        .book-container {
+          .banner {
+            display: none;
+          }
+          .book-book {
+            .book-link {
+              &:first-child,
+              &:last-child {
+                display: none;
+              }
+              .book-items {
+                width: 220px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-footer {
+    .footer {
+      .footer-header {
+        .footer-heading {
+          .fl-l {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* pc: width > 1024px*/
+@media only screen and (min-width: 1024px) {
+
+}

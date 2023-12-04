@@ -1,0 +1,57 @@
+BOOKSTORE
+
+* đăng ký, đăng nhập
+
+* main
+-danh mục sp
+	+thiếu nhi
+		.khoa học thiếu nhi
+			* book 
+				-thêm vào giỏ hàng/mua ngay
+				-mô tả sp
+				-bình luận
+				-sp khác
+			* book 
+			* book 
+			* book 
+			* book 
+			* book 
+			* book 
+			* book 	
+		.văn học thiếu nhi
+		.tủ sách cổ tích
+	+văn học
+		.văn học kinh điển
+		.văn học thiếu nhi
+		.thomas and friends
+	+tâm lý đời sống
+		.rèn luyện kỹ năng sống
+		.tủ sách Bác Hồ
+		.tủ sách sống đẹp
+	+khoa học
+		.10 vạn câu hỏi vì sao
+		.365 ngày phát triển IQ
+		.khám phá những bí ẩn
+		.thế nào và tại sao
+	+ctri lsu
+		.truyện tranh lsu
+		.tủ sách Bác Hồ
+	+tham khảo
+		.giáo dục tham khảo
+		.tủ sách ngoại ngữ
+-trang chủ
+
+-gthieu
+	+gth chung
+	+hdong kinh doanh
+-liên hệ
+
+*giỏ hàng
+
+*thanh toán
+
+function: login, signup
+					contact
+					
+- admin
+- gio hang user

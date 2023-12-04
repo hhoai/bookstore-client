@@ -1,0 +1,78 @@
+/* mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  .header-container .search {
+    display: none;
+  }
+  .header-container .search input {
+    width: 250px;
+  }
+  .header-container .hotline,
+  .header-container .shopping-cart {
+    display: none;
+  }
+  .nav-header .nav-container {
+    display: flex;
+  }
+  .nav-header .nav-container .nav-right {
+    display: none;
+  }
+}
+/* tablet: width >= 740px && < 1024px */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+  .header-container .search input {
+    width: 250px;
+  }
+  .header-container .hotline,
+  .header-container .shopping-cart {
+    display: none;
+  }
+  .home-page .slider .slider-container .menu {
+    display: none;
+  }
+  .home-page .slider .slider-container .slidershow {
+    padding: 0px 15px;
+  }
+  .home-page .slider .slider-container .slidershow .img-slideshow {
+    position: relative;
+    left: 0px;
+    top: 2px;
+    max-width: 100%;
+  }
+  .home-page .slider .banner {
+    padding: 0px 15px;
+    position: relative;
+    left: 0px;
+  }
+  .home-page .slider .banner .banner-items .banner-img {
+    width: 100%;
+  }
+  .home-page .new-book .book-a .book-container .book-link:first-child, .home-page .new-book .book-a .book-container .book-link:last-child {
+    display: none;
+  }
+  .home-page .bestseller-book,
+  .home-page .kid-book,
+  .home-page .raise-children-book {
+    padding: 0px 15px;
+  }
+  .home-page .bestseller-book .book-a .book-container .banner,
+  .home-page .kid-book .book-a .book-container .banner,
+  .home-page .raise-children-book .book-a .book-container .banner {
+    display: none;
+  }
+  .home-page .bestseller-book .book-a .book-container .book-book .book-link:first-child, .home-page .bestseller-book .book-a .book-container .book-book .book-link:last-child,
+  .home-page .kid-book .book-a .book-container .book-book .book-link:first-child,
+  .home-page .kid-book .book-a .book-container .book-book .book-link:last-child,
+  .home-page .raise-children-book .book-a .book-container .book-book .book-link:first-child,
+  .home-page .raise-children-book .book-a .book-container .book-book .book-link:last-child {
+    display: none;
+  }
+  .home-page .bestseller-book .book-a .book-container .book-book .book-link .book-items,
+  .home-page .kid-book .book-a .book-container .book-book .book-link .book-items,
+  .home-page .raise-children-book .book-a .book-container .book-book .book-link .book-items {
+    width: 220px;
+  }
+  .main-footer .footer .footer-header .footer-heading .fl-l {
+    width: 90%;
+  }
+}
+/* pc: width > 1024px*//*# sourceMappingURL=responsive.css.map */
