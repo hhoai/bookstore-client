@@ -1,2 +1,2 @@
 # book-store
-https://hhoai.github.io/book-store/ 
+https://hhoai.github.io/bookstore-client/
